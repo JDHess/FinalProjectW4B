@@ -141,7 +141,7 @@ nav .ulnavigation .navlist {
     float: left;
     position: relative;
     left: 50px;
-    margin: 500px 50px 75px 0px;
+    margin: 700px 50px 75px 0px;
     width: 33.3%;
 }
 .coowner {
@@ -152,7 +152,7 @@ nav .ulnavigation .navlist {
     float: left;
     width: 500px;
     position: absolute;
-    margin: 600px 0px;
+    margin: 700px 0px;
     color:#ffffff;
     font-size: 30pt;
     text-align: center; 
@@ -163,11 +163,13 @@ nav .ulnavigation .navlist {
 .p1 {
     font-size: 50pt;
 }
-
+.p3{
+    text-shadow: 3px 3px 8px rgb(255, 136, 0); 
+}
 .fig2 {
     float: right;
     position: relative;
-    top: 500px;
+    top: 700px;
     margin: 0px 50px;
     width: 33.3%;
     right: -10%
@@ -188,7 +190,7 @@ nav .ulnavigation .navlist {
     box-shadow: 6px -6px 0px  #ffffff;
     border: 20px solid rgb(255, 136, 0);
     position: absolute; 
-    top: 200%;
+    top: 230%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 70px 0px;
@@ -234,7 +236,7 @@ nav .ulnavigation .navlist {
 footer {
     position: relative;
     bottom: 0;
-    margin: -150px 0px;
+    margin: -170px 0px;
 }
 /*start what we do text*/
 .auto1{

@@ -80,7 +80,7 @@ main {
     height: 200px;
 }
 .hero-image {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/UHAUL1.jpg");
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/UHAUL1.PNG");
     /*Photo By Erik Hess from Facebook*/
     height: 500px;
     /*image scrolls under everything else on the website*/
