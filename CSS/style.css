@@ -99,7 +99,7 @@ nav .ulnavigation .navlist {
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     font-size: 40pt;
     font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Oleo Script', cursive;
 }
 /*change heading border color*/
 .heroheading {
@@ -136,7 +136,7 @@ nav .ulnavigation .navlist {
     display: table; 
     clear: both; 
     color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Molengo', sans-serif;
     font-size: 70pt;
     position: relative;
     padding-bottom: 70px;
@@ -145,6 +145,7 @@ nav .ulnavigation .navlist {
     top:0%;
     left: 50%;
     transform: translate(-50%,0%);
+    text-align: center;
 }
 .coowner {
     height: 400px;
@@ -158,6 +159,7 @@ nav .ulnavigation .navlist {
     position: relative;
     text-align: center; 
     color:#ffffff;
+    font-family: 'Molengo', sans-serif;
     font-size: 30pt;
     top: 50%;
     left: 50%; 
@@ -172,45 +174,10 @@ nav .ulnavigation .navlist {
     transform: translate(-50%, -50%);
     }
 /*End column*/
-/*social and contact us links*/
-
-.contactbox {
-    background-color: #000000;
-    box-shadow: 6px -6px 0px  #ffffff;
-    border: 20px solid rgb(255, 136, 0);
-    position: absolute; 
-    top: 220%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 70px 0px;
-    font-size: 15px;
-}
-.number{
-    align-items: center;
-    padding: 8px; 
-    background-color: white; 
-    border: 3px solid rgb(255, 255, 255);
-    color:#000000;
-    font-size: 20px;
-    font-weight: bolder; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 10px 10px;
-}
-.numberbutton1{
-    float: left;
-    height: 20%;
-    margin: 10px 10px;
-}
-.facebookbutton{
-    float:right; 
-    padding: 29px;
-}
-.buttonlink2 {
-    color: #000000;
-}
+/*start redcat image*/
 .redcatbox{
     position: relative;
-    top: 400px;
+    top: 200px;
 }
 
 .redcatimage {
@@ -221,26 +188,26 @@ nav .ulnavigation .navlist {
     background-size: cover;
     position: relative;
 }
-
-/*start footer*/
-footer {
-    position: relative;
-    bottom: 0;
-    margin: 200px 0px;
-}
-/*start what we do text*/
-.auto1{
-    position: relative; 
-    top: -100px;
+/*end redcat image*/
+.autobox {
+    margin-bottom: 190px;
+    margin-top: -150px;
 }
 .auto2{
     color: white;
-    font-size: 50pt;
+    font-size: 70pt;
+    font-family: 'Molengo', sans-serif;
     text-align: center;
     position: relative;
-    top: -50px;
+    top: 80px;
 }
-/*end what we do text*/
+/*start footer*/
+footer {
+    position: relative;
+    bottom: 0%;
+    margin: 200px 0px;
+    clear: both;
+}
 .foot {
     width: 100%;
     height: 300px;
@@ -253,18 +220,47 @@ footer {
     clear:both;
     bottom: 0; 
 }
+.column1 {
+    float: left;
+    height: 33px;
+    position: relative; 
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.colorb {
+    width: 45%;
+}
+.colorc {
+    width: 34%;
+}
+.colord {
+    width: 21%
+}
 .logo2 {
         float:left;
-        height: 300px; 
-        display: block; 
-        margin: -60px 40px;
+        height: 300px;  
+        position: relative;
+        top: -40px;
         clear:both;
 }
-.facebook {
-    height: 100px;
-    float: right;
-    margin: -120px 0px;
-    right: 55px;
-    clear:both;
+.fa-facebook-square {
+    float: right; 
+    color:rgb(0, 8, 255);
+    position: absolute; 
+    top: 20px;
+    right: 2%
+}
+.fa-facebook-square:hover {
+    text-shadow: -2px -2px 2px black;
+}
+.telephone {
+    clear: both;
+    position: relative; 
+    top: 159px;
+    right: 2%;
+    text-align: right;
 }
 /*end footer*/
