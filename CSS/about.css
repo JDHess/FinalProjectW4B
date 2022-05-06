@@ -125,7 +125,8 @@ main {
 }
 .video {
     position: relative;
-    top: 10px;
+    top: 0;
+    height: 400px;
 }
 .section2 {
     background-color: rgb(255, 255, 255);
@@ -133,10 +134,13 @@ main {
     font-size: 50pt;
     color: rgb(0, 0, 0);
     border: 3pt solid white;
-    margin: 100pt;
+    margin: 200pt 100pt;
     box-shadow: -20px -20px 0px rgb(255, 136, 0);
     position: relative; 
     top: 0;
+}
+.map {
+    margin: -150px 0px 0px;
 }
 /*start footer*/
 footer {
