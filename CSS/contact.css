@@ -144,3 +144,66 @@ label {
     text-shadow: 2px 2px 3px rgb(255, 136, 0);
 }
 /*end contact us*/
+/*start footer*/
+footer {
+    position: relative;
+    bottom: 0;
+    margin: 200px 0px;
+    clear: both;
+}
+.foot {
+    width: 100%;
+    height: 300px;
+    margin: 300px 0px -400px;
+    background-repeat: no-repeat;
+    background-image: url("/images/SunSet.PNG");
+    background-size: 100% 65%;
+    font-weight: bolder;
+    font-size: 22pt;
+    clear:both;
+    bottom: 0; 
+}
+.column1 {
+    float: left;
+    height: 33px;
+    position: relative; 
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.colorb {
+    width: 45%;
+}
+.colorc {
+    width: 34%;
+}
+.colord {
+    width: 21%
+}
+.logo2 {
+        float:left;
+        height: 300px;  
+        position: relative;
+        top: -40px;
+        clear:both;
+}
+.fa-facebook-square {
+    float: right; 
+    color:rgb(0, 8, 255);
+    position: absolute; 
+    right: 2%;
+    text-shadow: -2px -2px 2px rgb(255, 255, 255);
+}
+.fa-facebook-square:hover {
+    text-shadow: -2px -2px 2px black;
+}
+.telephone {
+    clear: both;
+    position: relative; 
+    top: 159px;
+    right: 2%;
+    text-align: right;
+}
+/*end footer*/

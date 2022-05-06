@@ -249,6 +249,7 @@ footer {
 .fa-facebook-square {
     float: right; 
     color:rgb(0, 8, 255);
+    text-shadow: -2px -2px 2px rgb(255, 255, 255);
     position: absolute; 
     top: 20px;
     right: 2%
