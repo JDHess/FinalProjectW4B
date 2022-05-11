@@ -6,6 +6,7 @@
 body {
     background-color: rgb(0, 0, 0);
 }
+/*Start Navigation*/
 /*Navigation*/
 nav {
     position: fixed; 
@@ -70,6 +71,8 @@ a:hover {
 nav .ulnavigation .navlist {
     display:inline-block
 }
+/*end Navigation*/
+/*start hero section*/
 /*container for hero image and text*/
 .herocontain {
     height: 200px;
@@ -120,7 +123,7 @@ nav .ulnavigation .navlist {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 70px;
 }
-/*end hero heading*/
+/*end hero section*/
 /*begin column*/
 .box1 {
     position: relative; 
