@@ -80,7 +80,7 @@ nav .ulnavigation .navlist {
 .hero-image {
     background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/BrokenCar.PNG");
     /*Photo By Erik Hess from Facebook*/
-    height: 717px;
+    height: 90vh;
     /*image is fixed in background all other elements are scrolling*/
     background-repeat: no-repeat;
     background-size: cover;
