@@ -1,79 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Molengo&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Molengo&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1a1dc46bbe.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Home</title>
 </head>
-<body>
-    <!--Navigation-->
-    <Div class="Navcontainer">
-        <nav>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
             <img class="logo" src="./images/RRAutoLogo.PNG" alt="R and Rs Auto Logo"/>
-            <ul class="ulnavigation">
-                <li class="navlist"><a href="./index.html" >Home</a></li>
-                <li class="navlist"><a href="./about.html">About Us</a></li>
-                <li class="navlist"><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </Div>
- <!--end Navigation-->
-<!--hero image-->
-<main class="herocontain">
-    <div class="hero-image inline-photo"></div>
-        <div class="hero-text">
-            <h1 class="heroheading" alt="A broken down picture of a car is behind a title">R&#38;R Auto Repair</h1>
-            <button class="contactbutton" role="button"> <a href="./contact.html">Contact Us</a></button>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link" href="./about.html">About Us</a>
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </div>
+            <br>
+          </div>
         </div>
-    </div>
-</main> 
-<!--end hero image-->
-<div class="box1">
-    <div class="row">
-        <div class="column">
-            <img class="coowner" src="./images/coowner.PNG" alt="An image of one of the owners of R and R Auto"/>
-        </div>
-        <div class="column">
-            <h2 class="wetry">We have done our best to provide quality service to our customers.</h2>
-        </div>
-        <div class="column">
-            <img class="owner" src="./images/owner.PNG" alt="a picture of another owner of R and R auto"/>
-        </div>
-    </div>
-</div>
-<figure class="redcatbox">
-    <!--change alt text-->
-        <a href="https://www.facebook.com/RRAUTOREPAIRSHOP/" target="_blank"><img class="redcatimage" src="./images/Redcat.PNG" alt="a picture of the R and R auto tow-truck. Its brightly lit on a street at night"/></a>
-</figure> 
-    <div class="autobox">
-        <h2 class="auto2"> &#8226; Brakes &#8226; </h2>
-        <h2 class="auto2"> &#8226; General Auto Repair &#8226; </h2>
-        <h2 class="auto2"> &#8226; Engine Tune Ups &#8226; </h2>
-        <h2 class="auto2"> &#8226; Oil Lube &#38; Filter Service &#8226; </h2>
-        <h2 class="auto2"> &#8226; Towing &#8226; U-Haul Rental &#8226;</h2>
-    </div>
-        <!--start footer--> 
-<footer class="foot">
-    <div class="row1">
-        <div class="column1 colorb">
-            <img class="logo2" src="./images/RRAutoLogo.PNG" alt="R and R Autos Logo"/>
-        </div>
-        <div class="column1 colorc"></div>
-        <div class="column1 colord">
-            <a href="https://www.facebook.com/RRAUTOREPAIRSHOP" target="_blank"><i class="fa-brands fa-facebook-square fa-5x"></i></a>   
-            <div class="telephone">
-                <a href="tel:15598342762">(559)834-2762</a>
+      </nav>
+    <section class="secheight">
+        <div class="herocontain">
+            <div class="hero-image inline-photo"></div>
+                <div class="hero-text">
+                    <h1 class="heroheading" alt="A broken down picture of a car is behind a title">R&#38;R Auto Repair</h1>
+                    <button class="contactbutton" role="button"> <a href="./contact.html">Contact Us</a></button>
+                </div>
             </div>
         </div>
-    </div> 
-    
-</footer>
-<!--end footer-->
-</body>
+    </section>
+    <section class="text-center ">
+        <br>
+        <br>
+        <h2 class="fontsizeone">From the first time we opened shop...</h2>
+        <br>
+        <br>
+    </section>
+    <div class="box1">
+        <div class="row">
+            <div class="column">
+                <img class="coowner" src="./images/coowner.PNG" alt="An image of one of the owners of R and R Auto"/>
+            </div>
+            <div class="column">
+                <h2 class="wetry">We have done our best to provide quality service to our customers.</h2>
+            </div>
+            <div class="column">
+                <img class="owner" src="./images/owner.PNG" alt="a picture of another owner of R and R auto"/>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+</section>
+<!--test-->
+<div class="p-5 mb-4 bg-light rounded-3 backgroundone d-flex align-items-center hero-imagetwo">
+  <div class="col-10 mx-auto">
+  </div>
+</div>
+<!--Photo by Erik Mclean on Unsplash-->
+
+<section class="d-flex justify-content-center">
+    <div class="hero-imagethree inline-photo" alt="a picture of a UHAUL moving van"></div>  
+</section>
+<br>
+<section class="d-flex justify-content-center">
+    <div class="card w-75">
+        <div class="card-body text-center">
+          <h2 class="textsizeone"><a class="textsizeone"href="https://www.uhaul.com/Locations/Truck-Rentals-near-Fowler-CA-93625/004573/">Visit Our Page On UHAUL</a></h2>
+        </div>
+      </div>
+</section>
+<br>
+<br>
+    <section class="text-center">
+        <h2 class="fontsizetwo">• Brakes • <br> • General Auto Repair • <br> • Engine Tune Ups • <br> • Oil Lube & Filter Service • <br> • Towing • U-Haul Rental • </h2>
+    </section>
+<br>
+<br>
+<div class="sunset">
+    <div class="container-fluid d-flex justify-content-center">
+        <img class="logo" src="./images/RRAutoLogo.PNG" alt="R and Rs Auto Logo"/>
+      </button>
+    </div>
+</div>
+
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          
+            <!-- Email input -->
+            <div class="d-flex flex-row align-items-center justify-content-center">
+                <h2 class="text-center" style="font-size: 2.5vw;"><a href="tel:15598342762">(559)834-2762</a></h2>
+                <h2 class="text-dark"> __ </h2>
+                <h2 class="text-center" style="font-size: 2.5vw;"><a href="https://www.uhaul.com/Locations/Truck-Rentals-near-Fowler-CA-93625/004573/">UHAUL</a></h2>
+                <h2 class="text-dark"> __ </h2>
+                <a href="https://www.facebook.com/RRAUTOREPAIRSHOP" target="_blank"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
+            </div>
+          </div>
+        <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 R&R Auto Repair
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>

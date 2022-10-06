@@ -1,64 +1,38 @@
-*{
-    margin: 0px 0px 0px;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
 }
-/*Start Navigation*/
-/*Navigation*/
-nav {
-    position: fixed; 
-    top: 0;
-    /*z-index possitions and allows overlapping of elements*/
-    z-index: 1;
-}
-.Navcontainer {
-    width: 100%;
-    height: 200px;    
-}
-.logo {
-    float:left;
-    height: 150px; 
-    /*display block takes up a new line and avalible screen width*/
-    display: block;
-    margin: -20px 40px;
-}
-/*Navigation*/
-nav {
-    height: 300px;
+/*Start Nav*/
+.navbar {
+    height: 150px;
     background-repeat: no-repeat;
     width: 100%;
     background-image: url("../images/SunSet.PNG");
-    background-size: 100% 50%;
-    font-weight: bolder;
-}
-/*ul in Navigation*/
-.ulnavigation {
-    list-style-type: none;
-    overflow: hidden;  
-    text-align: right;
-    padding: 30px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px black;
-}
-/*list in Navigation*/
-.navlist {
-    padding: 8px 16px;
-    text-align: center;
-    font-size: 22pt;
-}
-nav .ulnavigation .navlist {
-    margin: 20px 20px;
-}
-/*hover on click in Navigation*/
-.navlist a:hover {
-    color: rgb(255, 185, 119);
-    text-shadow: 3px 3px 0px black;
+    background-size: 100% 100%;
+    z-index: 1;
+    position: relative;
 }
 
-/*links in Navigation*/
+.navbar-nav {
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px black;
+    font-size: 22pt;
+}
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-align: center;
+    
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(255, 185, 119);
+    text-shadow: 3px 3px 0px black;
+  }
+  
+.logo {
+    height: 130px; 
+}
+/*End Nav*/
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -66,13 +40,9 @@ a {
 a:hover {
     color: rgb(255, 123, 0);
 }
-/*inline-block on Navigation, lists, and link*/
-nav .ulnavigation .navlist {
-    display:inline-block
+.secheight {
+    height: 90vh;
 }
-/*end Navigation*/
-/*start hero section*/
-/*container for hero image and text*/
 .herocontain {
     height: 200px;
     position: relative;
@@ -87,14 +57,13 @@ nav .ulnavigation .navlist {
     /*background attachement makes image fixed*/
     background-attachment: fixed;
     position: relative;
-    top:-50px;
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 .hero-text {
     text-align: center; 
     position: absolute; 
-    top: 150%;
+    top: 170%;
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #ffffff; 
@@ -109,6 +78,7 @@ nav .ulnavigation .navlist {
     padding: 8px;
    /*make transparent background*/
     background-color: none;
+    font-size: 10vw;
 }
 .contactbutton {
     align-items: center;
@@ -117,16 +87,16 @@ nav .ulnavigation .navlist {
     border: 3px solid rgb(255, 255, 255);
     color: #ffffff;
     text-shadow: 2px 2px 1px rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bolder; 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 70px;
 }
-/*end hero section*/
-/*begin column*/
+.fontsizeone {
+    font-size: 10vw;
+}
 .box1 {
     position: relative; 
-    top: 469px;
 }
 .column {
     float: left; 
@@ -137,22 +107,6 @@ nav .ulnavigation .navlist {
     display: flex; 
     flex-wrap: wrap; 
     padding: 0 4px;
-}
-.row:before {
-    content: "From the first time we opened shop...";
-    display: table; 
-    clear: both; 
-    color: #ffffff;
-    font-family: 'Molengo', sans-serif;
-    font-size: 70pt;
-    position: relative;
-    padding-bottom: 70px;
-    padding-top: 70px;
-    /*Had to use positioning and transform translate to center text*/
-    top:0%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    text-align: center;
 }
 .coowner {
     height: 400px;
@@ -180,156 +134,82 @@ nav .ulnavigation .navlist {
     left: 50%; 
     transform: translate(-50%, -50%);
     }
-/*End column*/
-/*start redcat image*/
-.redcatbox{
+/*hero image*/
+.hero-imagetwo {
+    background-image: url("../images/Redcat.PNG");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+  /*image is fixed in background all other elements are scrolling*/  
+  /*background attachement makes image fixed*/
+    background-attachment: fixed;
     position: relative;
-    top: 200px;
+    background-position: center;
+}
+/*Photo by Erik Mclean on Unsplash*/
+.hero-imagethree {
+    background-image: url("../images/UHAUL2.jpg");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+  /*image is fixed in background all other elements are scrolling*/  
+  /*background attachement makes image fixed*/
+    position: relative;
+    background-position: bottom;
+}
+.textsizeone {
+    font-size: 5vw;
+    color: black;
 }
 
-.redcatimage {
-    width: 100%;
-    position: relative;
-    margin: 350px 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+.fontsizetwo {
+    font-size: 8vw;
 }
-/*end redcat image*/
-.autobox {
-    margin-bottom: 190px;
-    margin-top: -150px;
-}
-.auto2{
-    color: white;
-    font-size: 70pt;
-    font-family: 'Molengo', sans-serif;
-    text-align: center;
-    position: relative;
-    top: 80px;
-}
-/*start footer*/
-footer {
-    position: relative;
-    bottom: 0%;
-    margin: 200px 0px;
-    clear: both;
-}
-.foot {
-    width: 100%;
-    height: 300px;
-    margin: 60px 0px -400px;
-    background-repeat: no-repeat;
-    background-image: url("../images/SunSet.PNG");
-    background-size: 100% 65%;
-    font-weight: bolder;
-    font-size: 22pt;
-    clear:both;
-    bottom: 0; 
-}
-.column1 {
-    float: left;
-    height: 33px;
-    position: relative; 
-}
-.row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-.colorb {
-    width: 45%;
-}
-.colorc {
-    width: 34%;
-}
-.colord {
-    width: 21%
-}
-.logo2 {
-        float:left;
-        height: 300px;  
-        position: relative;
-        top: -40px;
-        clear:both;
-}
-.fa-facebook-square {
-    float: right; 
-    color:rgb(0, 8, 255);
-    text-shadow: -2px -2px 2px rgb(255, 255, 255);
-    position: absolute; 
-    top: 20px;
-    right: 2%
-}
-.fa-facebook-square:hover {
-    text-shadow: -2px -2px 2px black;
-}
-.telephone {
-    clear: both;
-    position: relative; 
-    top: 159px;
-    right: 2%;
-    text-align: right;
-    font-size: 20pt;
-}
-/*end footer*/
-/*media queries*/
-@media screen and (max-width: 995px) {
-    .column {
-      /*Flex shrinks content to fit avalible container*/
-        flex: 50%;
-        /*changes width*/
-        max-width: 50%;
+    @media screen and (max-width: 995px) {
+        .column {
+          /*Flex shrinks content to fit avalible container*/
+            flex: 50%;
+            /*changes width*/
+            max-width: 50%;
+        }
+        .auto2 {
+            font-size: 40pt;
+        }
+        .wetry{
+            margin-top: 250px;
+            font-size: 55pt;
+        }
     }
-    .auto2 {
-        font-size: 40pt;
+    .sunset {
+        height: 150px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url("../images/SunSet.PNG");
+        background-size: 100% 100%;
     }
-    .wetry{
-        margin-top: 250px;
-        font-size: 55pt;
-    }
-    .logo2 {
-        width: 600px;
-        height: auto;
-    }
-    .telephone {
-        font-size: 15pt;
-    }
-  }
-  @media screen and (max-width: 686px) {
-    .row:before {
-        font-size: 25pt;
-    }
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-    .wetry {
-        margin-top: -200px;
-        font-size: 30pt;
-    }
-    .owner {
-        margin-top: -400px;
-    }
-    .redcatbox {
-        margin-top: -400px;
-    }
-    .auto2 {
-        font-size: 30pt;
-    }
-    .logo2 {
-        width: 400px;
-        height: auto;
-    }
-    .telephone {
-        font-size: 12pt;
-    }
-  }
-  @media screen and (max-width: 498px) {
-    .logo2 {
-        width: 200px;
-        height: auto;
-        position: relative; 
-        top: 20px;
-    }
-  }
+    @media screen and (max-width: 686px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+        .wetry {
+            margin-top: -200px;
+            font-size: 30pt;
+        }
+        .owner {
+            margin-top: -400px;
+        }
+    }  
+    @media screen and (max-width: 991px) {
+        .navbar-collapse {
+            background-color: black;
+            
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: rgb(255, 136, 0);
+            text-shadow: 3px 3px 0px black;
+          }
+    }  
+   
