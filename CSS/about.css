@@ -1,99 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    color: white;
 }
-/*Start Navigation*/
-nav {
-    position: fixed; 
-    top: 0;
-   /*caused navigation overlap*/
-    z-index: 1;
-}
-.Navcontainer {
-    width: 100%;
-    height: 145px;
-    position: relative;
-}
-
-.logo {
-    float:left;
-    height: 150px; 
-    display: block;
-    position: relative; 
-}
-nav {
-    height: 300px;
+/*Start Nav*/
+.navbar {
+    height: 150px;
     background-repeat: no-repeat;
     width: 100%;
     background-image: url("../images/SunSet.PNG");
-    background-size: 100% 50%;
+    background-size: 100% 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-nav {
     font-weight: bolder;
+    text-shadow: 2px 2px 0px black;
     font-size: 22pt;
 }
-/*ul in Navigation*/
-.ulnavigation {
-    list-style-type: none;
-    overflow: hidden;  
-    text-align: right;
-    padding: 30px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 0px black;
-}
-/*list in Navigation*/
-.navlist {
-    padding: 8px 16px;
+.navbar .navbar-nav .nav-link {
+    color: #fff;
     text-align: center;
+    
 }
-nav .ulnavigation .navlist {
-    margin: 20px 20px;
-}
-/*hover on click in Navigation*/
-.navlist a:hover {
+.navbar .navbar-nav .nav-link:hover {
     color: rgb(255, 185, 119);
     text-shadow: 3px 3px 0px black;
+  }
+  
+.logo {
+    height: 130px; 
 }
-/*links in Navigation*/
+/*End Nav*/
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-/*inline-block on Navigation, lists, and link*/
-nav .ulnavigation .navlist {
-    display:inline-block
+a:hover {
+    color: rgb(255, 123, 0);
 }
-/*end navigation*/
-/*start main content*/
-main {
-    color:rgb(0, 217, 255); 
+.secheight {
+    height: 90vh;
 }
-/*herocontain is larger than what it contains it contains scroll efect*/
 .herocontain {
-    height: 717px;
-    position: relative;
-}
-.stickyimg {
-    position: relative;
     height: 200px;
+    position: relative;
 }
 .hero-image {
     background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/UHAUL1.PNG");
-    height: 500px;
-   /*image is fixed in background all other elements are scrolling*/
+    /*Photo By Erik Hess from Facebook*/
+    height: 90vh;
+    /*image is fixed in background all other elements are scrolling*/
     background-repeat: no-repeat;
     background-size: cover;
     /*background attachement makes image fixed*/
     background-attachment: fixed;
     position: relative;
-    top:-50;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 .hero-text {
     text-align: center; 
     position: absolute; 
-    top: 120%;
+    top: 170%;
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #ffffff; 
@@ -108,142 +77,68 @@ main {
     padding: 8px;
    /*make transparent background*/
     background-color: none;
+    font-size: 10vw;
 }
-/*end main content*/
 .section1{
     background-color: white;
     text-align: center;
-    font-size: 50pt;
+    font-size: 5vw;
     padding: 30px 30px;
     position: relative;
-    top: -150px;
+    
 }
 .about { 
     padding: 50px 50px;
     width: 100%;
     height: 100px;
+    color: black;
 }
 /*start video*/
 .video {
     position: relative;
-    top: 0;
     height: 400px;
+    top: 60pt;
 }
 /*end video*/
 .section2 {
     background-color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 50pt;
+    font-size: 5vw;
     color: rgb(0, 0, 0);
     border: 3pt solid white;
     margin: 200pt 100pt;
     box-shadow: -20px -20px 0px rgb(255, 136, 0);
     position: relative; 
-    top: 0;
 }
 /*start map*/
 .map {
     margin: -150px 0px 0px;
 }
-/*end map*/
-/*start footer*/
-footer {
-    position: relative;
-    bottom: 0%;
-    margin: 200px 0px;
-    clear: both;
-}
-.foot {
-    width: 100%;
-    height: 300px;
-    margin: 60px 0px -400px;
-    background-repeat: no-repeat;
-    background-image: url("../images/SunSet.PNG");
-    background-size: 100% 65%;
-    font-weight: bolder;
-    font-size: 22pt;
-    clear:both;
-    bottom: 0; 
-}
-.column1 {
-    float: left;
-    height: 33px;
-    position: relative; 
-}
-.row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-.colorb {
-    width: 45%;
-}
-.colorc {
-    width: 34%;
-}
-.colord {
-    width: 21%
-}
-.logo2 {
-        float:left;
-        height: 300px;  
-        position: relative;
-        top: -40px;
-        clear:both;
-}
-.fa-facebook-square {
-    float: right; 
-    color:rgb(0, 8, 255);
-    text-shadow: -2px -2px 2px rgb(255, 255, 255);
-    position: absolute; 
-    top: 20px;
-    right: 2%
-}
-.fa-facebook-square:hover {
-    text-shadow: -2px -2px 2px black;
-}
-.telephone {
-    clear: both;
-    position: relative; 
-    top: 159px;
-    right: 2%;
-    text-align: right;
-    font-size: 20pt;
-}
-/*end footer*/
-@media screen and (max-width: 1023px) {
-    .section2 {
-        font-size: 30pt;
+
+
+
+
+
+
+
+
+
+
+.sunset {
+        height: 150px;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-image: url("../images/SunSet.PNG");
+        background-size: 100% 100%;
     }
-}
-@media screen and (max-width: 995px) {
-    .logo2 {
-        width: 600px;
-        height: auto;
+
+    @media screen and (max-width: 991px) {
+        .navbar-collapse {
+            background-color: black;
+            
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: rgb(255, 136, 0);
+            text-shadow: 3px 3px 0px black;
+          }
     }
-    .telephone {
-        font-size: 15pt;
-    }
-}
-@media screen and (max-width: 686px) {
-    .section2 {
-        width: 90%;
-        position: relative;
-        margin: 200pt 30pt;
-    }
-    .logo2 {
-        width: 400px;
-        height: auto;
-    }
-    .telephone {
-        font-size: 12pt;
-    }
-}
-@media screen and (max-width: 498px) {
-    .logo2 {
-        width: 200px;
-        height: auto;
-        position: relative; 
-        top: 20px;
-    }
-}

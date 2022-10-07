@@ -142,3 +142,14 @@ label {
         background-image: url("../images/SunSet.PNG");
         background-size: 100% 100%;
     }
+
+    @media screen and (max-width: 991px) {
+        .navbar-collapse {
+            background-color: black;
+            
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: rgb(255, 136, 0);
+            text-shadow: 3px 3px 0px black;
+          }
+    }
