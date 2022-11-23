@@ -77,6 +77,10 @@ a:hover {
     background-color: none;
     font-size: 10vw;
 }
+.pose17 {
+    position: relative;
+    top: -50px;
+}
 .contactbutton {
     align-items: center;
     padding: 8px; 
