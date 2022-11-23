@@ -195,11 +195,11 @@ a:hover {
           max-width: 100%;
         }
         .wetry {
-            margin-top: -200px;
+            margin-top: -100px;
             font-size: 30pt;
         }
         .owner {
-            margin-top: -400px;
+            margin-top: -200px;
         }
     }  
     @media screen and (max-width: 991px) {
