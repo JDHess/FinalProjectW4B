@@ -43,10 +43,35 @@ a:hover {
 .secheight {
     height: 90vh;
 }
+/*main image*/
 .herocontain {
-    height: 200px;
+    height: 500px;
     position: relative;
+    width: 100%;
+    display:block;
 }
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .herocontain{
+        display: none;
+    }
+    .stickyimg {
+        display: none;
+    }
+    .hero-image {
+        display: none;
+    }
+    }
+
+.stickyimg {
+    position: relative;
+    height: 50px;
+    display: block;
+    
+}
+
+
+/*Main hero image end*/
 .hero-image {
     background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/BrokenCar.PNG");
     /*Photo By Erik Hess from Facebook*/
@@ -62,11 +87,9 @@ a:hover {
 }
 .hero-text {
     text-align: center; 
-    position: absolute; 
-    top: 170%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    position: absolute;  
     color: #ffffff; 
+    top: 100px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
     font-size: 40pt;
     font-weight: bolder;
@@ -92,11 +115,72 @@ a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 70px;
 }
+
+.replacehero2 {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/BrokenCar.PNG");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+  /*image is fixed in background all other elements are scrolling*/  
+  /*background attachement makes image fixed*/
+    position: relative;
+    background-position: top;
+    display: none;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+.hero-text2 {
+    text-align: center; 
+    position: absolute;  
+    color: #ffffff; 
+    top: 200px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    font-size: 40pt;
+    font-weight: bolder;
+    font-family: 'Oleo Script', cursive;
+    display: none;
+}
+/*change heading border color*/
+.heroheading2 {
+    border: 10px solid rgb(255, 136, 0);
+    padding: 8px;
+   /*make transparent background*/
+    background-color: none;
+    font-size: 10vw;
+    display: none;
+}
+.contactbutton2 {
+    align-items: center;
+    padding: 8px; 
+    background: none; 
+    border: 3px solid rgb(255, 255, 255);
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+    font-size: 3vw;
+    font-weight: bolder; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 70px;
+    display: none
+}
+@media screen and (max-width: 991px) {
+    .replacehero2 {
+        display: block;
+    }
+    .hero-text2 {display: block;}
+    .heroheading2 {display: block;}
+    .contactbutton2 {display: block;}
+}
+
+
 .fontsizeone {
     font-size: 10vw;
+    position: relative;
+    top: 200px;
 }
 .box1 {
     position: relative; 
+    top: 200px;
 }
 .column {
     float: left; 
@@ -135,16 +219,69 @@ a:hover {
     transform: translate(-50%, -50%);
     }
 /*hero image*/
-.hero-imagetwo {
+
+/*redcat image*/
+.herocontain2 {
+    height: 500px;
+    position: relative;
+    width: 100%;
+    display:block;
+    top: 200px;
+}
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .herocontain2{
+        display: none;
+    }
+    .stickyimg2 {
+        display: none;
+    }
+    .hero-image2 {
+        display: none;
+    }
+    }
+
+.stickyimg2 {
+    position: relative;
+    height: 50px;
+    display: block;
+    
+}
+
+.hero-image2 {
+    /*I own this image*/
     background-image: url("../images/Redcat.PNG");
     height: 500px;
+    width: auto;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
   /*image is fixed in background all other elements are scrolling*/  
   /*background attachement makes image fixed*/
     background-attachment: fixed;
     position: relative;
-    background-position: center;
+    display: block;
+}
+
+/*Replace hero image Redcat*/
+.heroimagetwo2 {
+    background-image: url("../images/Redcat.PNG");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+  /*image is fixed in background all other elements are scrolling*/  
+  /*background attachement makes image fixed*/
+    position: relative;
+    background-position: bottom;
+    display: none;
+    top: 200px;
+}
+
+@media screen and (max-width: 991px) {
+    .heroimagetwo2 {
+        display: block;
+    }
+    
 }
 /*Photo by Erik Mclean on Unsplash*/
 .hero-imagethree {
@@ -157,15 +294,19 @@ a:hover {
   /*background attachement makes image fixed*/
     position: relative;
     background-position: bottom;
+    top: 200px;
 }
 .textsizeone {
     font-size: 5vw;
     color: black;
+    position: relative; 
 }
 
 
 .fontsizetwo {
     font-size: 8vw;
+    position: relative;
+    top: 100px;
 }
     @media screen and (max-width: 995px) {
         .column {
@@ -188,6 +329,8 @@ a:hover {
         width: 100%;
         background-image: url("../images/SunSet.PNG");
         background-size: 100% 100%;
+        position: relative;
+        top: 100px;
     }
     @media screen and (max-width: 686px) {
         .column {
@@ -212,4 +355,8 @@ a:hover {
             text-shadow: 3px 3px 0px black;
           }
     }  
-   
+    
+   footer{
+    position: relative;
+    top: 100px;
+   }
